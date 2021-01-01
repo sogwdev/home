@@ -13,7 +13,8 @@ $db = new PDO('mysql:host=us-cdbr-east-02.cleardb.com;port=3306;dbname=heroku_ef
 $search = $db->query("select pwd from membership where name=$name");
 while($targetpwd = $search->fetch()){
 if ($pwd == $targetpwd) {
-header('Location: https://startpage001.herokuapp.com/traveler/success.php');
+  print '認証成功';
+//header('Location: https://startpage001.herokuapp.com/traveler/success.php');
 } else {
   print  "認証失敗";
 }
