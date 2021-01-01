@@ -15,6 +15,7 @@ $targetpwd = $search-fetch();
 
 if ($pwd == $targetpwd) {
   header('success.php');
+  header('Location: 'success.php');
 } else {
   print  "認証失敗";
 }
