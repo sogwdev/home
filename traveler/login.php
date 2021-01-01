@@ -14,8 +14,7 @@ $search = $db->query("select pwd where name=$name");
 $targetpwd = $search-fetch();
 
 if ($pwd == $targetpwd) {
-  header('success.php');
-  header('Location: https://startpage001.herokuapp.com/traveler/success.php');
+header('Location: https://startpage001.herokuapp.com/traveler/success.php');
 } else {
   print  "認証失敗";
 }
