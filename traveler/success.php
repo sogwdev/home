@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="assets/jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/jquery/jmap.js"></script>
-    <script type="text/javascript" src="assets/prefecture.js"></script>
+    <!--<script type="text/javascript" src="assets/prefecture.js"></script>-->
     <script type="text/javascript">
     $(document).ready(function() {
 $('#jmap').jmap({
@@ -23,7 +23,7 @@ $('#jmap').jmap({
     fontColor: '#000',
     font: 'serif',
     areas: [
-    {code : 1, name: "ホッカイドウ", color: "#000000", hoverColor: "#b3b2ee" },
+    {code : 1, name: "北海道", color: "#000000", hoverColor: "#b3b2ee" },
     {code : 2, name: "青森", color: "#759ef4", hoverColor: "#98b9ff" },
     {code : 3, name: "岩手", color: "#759ef4", hoverColor: "#98b9ff" },
     {code : 4, name: "宮城", color: "#759ef4", hoverColor: "#98b9ff" },
@@ -195,8 +195,9 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 </div>
 <div class="jmap-infobox">
 </div>
+<a href = 'https://startpage001.herokuapp.com/traveler/hokkaido.html'>
 <div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
-
+</a>
 <!--<strong>北海道</strong>-->
 
 </div>
