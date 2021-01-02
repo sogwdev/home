@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="assets/jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/jquery/jmap.js"></script>
+    <script type="text/javascript" src="assets/prefecture.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
 $('#jmap').jmap({
@@ -194,11 +195,11 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 </div>
 <div class="jmap-infobox">
 </div>
-<a href="hokkaido.html"><div class="prefecture" jmap-uniq="1">
+<div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
 
-<!--<strong>北海道</strong>-->
+<strong>北海道</strong>
 </div>
-</a>
+
 <div class="prefecture" jmap-uniq="2">
 <strong>青森</strong>
 </div>
