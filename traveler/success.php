@@ -22,7 +22,7 @@ $('#jmap').jmap({
     fontColor: '#000',
     font: 'serif',
     areas: [
-    {code : 1, name: "北海道", color: "#7f7eda", hoverColor: "#b3b2ee" },
+    {code : 1, name: "ホッカイドウ", color: "#7f7eda", hoverColor: "#b3b2ee" },
     {code : 2, name: "青森", color: "#759ef4", hoverColor: "#98b9ff" },
     {code : 3, name: "岩手", color: "#759ef4", hoverColor: "#98b9ff" },
     {code : 4, name: "宮城", color: "#759ef4", hoverColor: "#98b9ff" },
