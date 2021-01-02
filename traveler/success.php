@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/css/prefectly.css">
+  <link rel="stylesheet" href="assets/map.css">
 </head>
 <body>
   <!-- ●日本地図 -->
