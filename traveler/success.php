@@ -197,11 +197,11 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 </div>
 <a href = 'https://startpage001.herokuapp.com/traveler/hokkaido.html'>
 <div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
-</a>
+
 <!--<strong>北海道</strong>-->
 
 </div>
-
+</a>
 <div class="prefecture" jmap-uniq="2">
 <strong>青森</strong>
 </div>
