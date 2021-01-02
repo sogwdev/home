@@ -15,8 +15,8 @@ while ($targetpwd = $search->fetch()){
 if ($pwd == $targetpwd['pwd']) {
 header('Location: https://startpage001.herokuapp.com/traveler/success.php');
 } else {
-  print  "認証失敗";
-  //<p>認証失敗</p>
+  //print  "認証失敗";
+  echo <li>認証失敗</li>;
 }
 }
  ?>
