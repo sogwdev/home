@@ -194,8 +194,8 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 </div>
 <div class="jmap-infobox">
 </div>
-<div class="prefecture" jmap-uniq="1">
-  <a href="hokkaido.html">ほっかいどう</a>
+<a href="hokkaido.html"><div class="prefecture" jmap-uniq="1">
+  </a>
 <!--<strong>北海道</strong>-->
 </div>
 <div class="prefecture" jmap-uniq="2">
