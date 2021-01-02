@@ -118,17 +118,19 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 
 <div class="jmap-infobox">
 </div>
-<?php
-
-echo "<div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
+<?php if(1 == 1) ?>
+<div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
 
 <a href = 'https://startpage001.herokuapp.com/traveler/hokkaido.html'>ほっかいどう</a>
 
-</div>"
-?>
+</div>
+<?php endif; ?>
+
+<?php if(1 == 2) ?>
 <div class="prefecture" jmap-uniq="2">
 <strong>青森</strong>
 </div>
+<?php endif; ?>
 <div class="prefecture" jmap-uniq="3">
 <strong>岩手</strong>
 </div>
