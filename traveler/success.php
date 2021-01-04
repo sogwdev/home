@@ -274,7 +274,7 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 
 <form action ="save.php" method="post">
 都道府県
-<div><select name="pref" size="5">
+<div><select name="pref" >
 <option value="">5つの選択肢を表示</option>
 <option value="選択肢2">1</option>
 <option value="選択肢3">2</option>
