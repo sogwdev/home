@@ -526,7 +526,7 @@ spot
 <?php
 print "{$kyotoflg[flg]}";
 print $naganoflg;
-
+print $hkd;
  ?>
 
 </body>
