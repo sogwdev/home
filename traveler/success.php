@@ -118,10 +118,18 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 
 <div class="jmap-infobox">
 </div>
-<?php if(1 == 1):?>
-<div class="prefecture" jmap-uniq="1"　id="prefhokkaido">
 
-<a href = 'https://startpage001.herokuapp.com/traveler/hokkaido.html'>北海道</a>
+<?php
+$db = new PDO('mysql:host=us-cdbr-east-02.cleardb.com;port=3306;dbname=heroku_ef5f71273fe5d40;charset=utf8','b712f8e8641bf4','466f991d');
+$hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'");
+?>
+
+
+
+<?php if($hokkaidoflg == 1):?>
+<div class="prefecture" jmap-uniq="1">
+
+<a href = 'https://startpage001.herokuapp.com/traveler/47/hokkaido.php'>北海道</a>
 
 </div>
 <?php endif; ?>
