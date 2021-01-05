@@ -284,7 +284,7 @@ $hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'")
 都道府県
 <div><select name="pref" required>
   <option value="">訪れた都道府県を選択して下さい。</option>
-  <option value="1">北海道</option>
+  <option value="北海道">北海道</option>
   <option value="2">青森県</option>
   <option value="3">岩手県</option>
   <option value="4">宮城県</option>
