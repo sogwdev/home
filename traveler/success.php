@@ -525,7 +525,7 @@ spot
 <input type = "submit" value = "投稿">
 </form>
 <?php
-print '$kochiflg';
+print $kochiflg;
 ?>
 
 </body>
