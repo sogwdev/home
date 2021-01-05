@@ -524,9 +524,7 @@ spot
 <div><textarea name = "impression"></textarea></div>
 <input type = "submit" value = "投稿">
 </form>
-<?php
-print $kochiflg;
-?>
+
 
 </body>
 </html>
