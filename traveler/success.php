@@ -121,7 +121,7 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 
 <?php
 $db = new PDO('mysql:host=us-cdbr-east-02.cleardb.com;port=3306;dbname=heroku_ef5f71273fe5d40;charset=utf8','b712f8e8641bf4','466f991d');
-$hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'");
+$hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'");-
 $aomoriflg = $db->query("select flg from list where prefecture = '青森県'");
 $iwateflg = $db->query("select flg from list where prefecture = '岩手県'");
 $miyagiflg = $db->query("select flg from list where prefecture = '宮城県'");
@@ -521,7 +521,11 @@ spot
 <div><textarea name = "impression"></textarea></div>
 <input type = "submit" value = "投稿">
 </form>
-
+<?php
+print "{$kyotoflg}";
+print "{$naganoflg}";
+print "{$chibaflg}";
+ ?>
 
 </body>
 </html>
