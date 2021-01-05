@@ -459,9 +459,7 @@ $okinawaflg = $db->query("select flg from list where prefecture = '沖縄県'");
 </div>
 </div>
 </div>
-<?php
-print $iwateflg; 
-?>
+
 
 
 <form action ="save.php" method="post">
@@ -524,7 +522,9 @@ spot
 <div><textarea name = "impression"></textarea></div>
 <input type = "submit" value = "投稿">
 </form>
-
+<?php
+print $iwateflg;
+?>
 
 </body>
 </html>
