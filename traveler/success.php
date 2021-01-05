@@ -522,7 +522,7 @@ spot
 <input type = "submit" value = "投稿">
 </form>
 <?php
-print "{$kyotoflg}";
+print "{$kyotoflg[flg]}";
 print "{$naganoflg}";
 print "{$chibaflg}";
  ?>
