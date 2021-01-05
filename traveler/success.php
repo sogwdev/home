@@ -122,7 +122,9 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 <?php
 $db = new PDO('mysql:host=us-cdbr-east-02.cleardb.com;port=3306;dbname=heroku_ef5f71273fe5d40;charset=utf8','b712f8e8641bf4','466f991d');
 $hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'");
+$hkd = $hokkaidoflg->fetch();
 $aomoriflg = $db->query("select flg from list where prefecture = '青森県'");
+$amr = $aomoriflg->fetch();
 $iwateflg = $db->query("select flg from list where prefecture = '岩手県'");
 $miyagiflg = $db->query("select flg from list where prefecture = '宮城県'");
 $akitaflg = $db->query("select flg from list where prefecture = '秋田県'");
@@ -172,13 +174,13 @@ $okinawaflg = $db->query("select flg from list where prefecture = '沖縄県'");
 
 
 
-<?php if($hokkaidoflg == 1):?>
+<?php if($hkd == 1):?>
 <div class="prefecture" jmap-uniq="1">
 <a href = 'https://startpage001.herokuapp.com/traveler/47/hokkaido.php'>北海道</a>
 </div>
 <?php endif; ?>
 
-<?php if(0 == 1):?>
+<?php if($amr == 1):?>
 <div class="prefecture" jmap-uniq="2">
 <a href = 'https://startpage001.herokuapp.com/traveler/47/aomori.php'>青森県</a>
 </div>
