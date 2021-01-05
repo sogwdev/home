@@ -523,8 +523,8 @@ spot
 </form>
 <?php
 print "{$kyotoflg[flg]}";
-print {$naganoflg};
-print "{$chibaflg}";
+print $naganoflg;
+echo $chibaflg;
  ?>
 
 </body>
