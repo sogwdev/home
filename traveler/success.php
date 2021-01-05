@@ -179,7 +179,7 @@ $okinawaflg = $db->query("select flg from list where prefecture = '沖縄県'");
 </div>
 <?php endif; ?>
 
-<?php if($aomoriflg == 1):?>
+<?php if(0 == 1):?>
 <div class="prefecture" jmap-uniq="2">
 <a href = 'https://startpage001.herokuapp.com/traveler/47/aomori.php'>青森県</a>
 </div>
