@@ -122,158 +122,340 @@ div[jmap-id="jmap-1"] .prefecture[jmap-uniq="47"]:hover {background-color:#f5c9f
 <?php
 $db = new PDO('mysql:host=us-cdbr-east-02.cleardb.com;port=3306;dbname=heroku_ef5f71273fe5d40;charset=utf8','b712f8e8641bf4','466f991d');
 $hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'");
+$aomoriflg = $db->query("select flg from list where prefecture = '青森県'");
+$iwateflg = $db->query("select flg from list where prefecture = '岩手県'");
+$miyagiflg = $db->query("select flg from list where prefecture = '宮城県'");
+$akitaflg = $db->query("select flg from list where prefecture = '秋田県'");
+$yamagataflg = $db->query("select flg from list where prefecture = '山形県'");
+$fukushimaflg = $db->query("select flg from list where prefecture = '福島県'");
+$ibarakiflg = $db->query("select flg from list where prefecture = '茨城県'");
+$tochigiflg = $db->query("select flg from list where prefecture = '栃木県'");
+$gunmaflg = $db->query("select flg from list where prefecture = '群馬県'");
+$saitamaflg = $db->query("select flg from list where prefecture = '埼玉県'");
+$chibaflg = $db->query("select flg from list where prefecture = '千葉県'");
+$tokyoflg = $db->query("select flg from list where prefecture = '東京都'");
+$kanagawaflg = $db->query("select flg from list where prefecture = '神奈川県'");
+$niigataflg = $db->query("select flg from list where prefecture = '新潟県'");
+$toyamaflg = $db->query("select flg from list where prefecture = '富山県'");
+$ishikawaflg = $db->query("select flg from list where prefecture = '石川県'");
+$fukuiflg = $db->query("select flg from list where prefecture = '福井県'");
+$yamanashiflg = $db->query("select flg from list where prefecture = '山梨県'");
+$naganoflg = $db->query("select flg from list where prefecture = '長野県'");
+$gifuflg = $db->query("select flg from list where prefecture = '岐阜県'");
+$shizuokaflg = $db->query("select flg from list where prefecture = '静岡県'");
+$aichiflg = $db->query("select flg from list where prefecture = '愛知県'");
+$mieflg = $db->query("select flg from list where prefecture = '三重県'");
+$shigaflg = $db->query("select flg from list where prefecture = '滋賀県'");
+$kyotoflg = $db->query("select flg from list where prefecture = '京都府'");
+$osakaflg = $db->query("select flg from list where prefecture = '大阪府'");
+$hyogoflg = $db->query("select flg from list where prefecture = '兵庫県'");
+$naraflg = $db->query("select flg from list where prefecture = '奈良県'");
+$wakayamaflg = $db->query("select flg from list where prefecture = '和歌山県'");
+$tottoriflg = $db->query("select flg from list where prefecture = '鳥取県'");
+$shimaneflg = $db->query("select flg from list where prefecture = '島根県'");
+$okayamaflg = $db->query("select flg from list where prefecture = '岡山県'");
+$hiroshimaflg = $db->query("select flg from list where prefecture = '広島県'");
+$yamaguchiflg = $db->query("select flg from list where prefecture = '山口県'");
+$tokushimaflg = $db->query("select flg from list where prefecture = '徳島県'");
+$kagawaflg = $db->query("select flg from list where prefecture = '香川県'");
+$ehimeflg = $db->query("select flg from list where prefecture = '愛媛県'");
+$kochiflg = $db->query("select flg from list where prefecture = '高知県'");
+$fukuokaflg = $db->query("select flg from list where prefecture = '福岡県'");
+$sagaflg = $db->query("select flg from list where prefecture = '佐賀県'");
+$nagasakiflg = $db->query("select flg from list where prefecture = '長崎県'");
+$kumamotoflg = $db->query("select flg from list where prefecture = '熊本県'");
+$oitaflg = $db->query("select flg from list where prefecture = '大分県'");
+$miyazakiflg = $db->query("select flg from list where prefecture = '宮崎県'");
+$kagoshimaflg = $db->query("select flg from list where prefecture = '鹿児島県'");
+$okinawaflg = $db->query("select flg from list where prefecture = '沖縄県'");
+
 ?>
 
 
 
 <?php if($hokkaidoflg == 1):?>
 <div class="prefecture" jmap-uniq="1">
-
 <a href = 'https://startpage001.herokuapp.com/traveler/47/hokkaido.php'>北海道</a>
-
 </div>
 <?php endif; ?>
 
-<?php if(1 == 2):?>
+<?php if($aomoriflg == 1):?>
 <div class="prefecture" jmap-uniq="2">
-<strong>青森</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/aomori.php'>青森県</a>
 </div>
 <?php endif; ?>
+
+<?php if($iwateflg == 1):?>
 <div class="prefecture" jmap-uniq="3">
-<strong>岩手</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/iwate.php'>岩手県</a>
 </div>
+<?php endif; ?>
+
+<?php if($miyagiflg == 1):?>
 <div class="prefecture" jmap-uniq="4">
-<strong>宮城</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/miyagi.php'>宮城県</a>
 </div>
+<?php endif; ?>
+
+<?php if($akitaflg == 1):?>
 <div class="prefecture" jmap-uniq="5">
-<strong>秋田</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/akita.php'>秋田県</a>
 </div>
+<?php endif; ?>
+
+<?php if($yamagataflg == 1):?>
 <div class="prefecture" jmap-uniq="6">
-<strong>山形</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/yamagata.php'>山形県</a>
 </div>
+<?php endif; ?>
+
+<?php if($fukushimaflg == 1):?>
 <div class="prefecture" jmap-uniq="7">
-<strong>福島</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/fukushima.php'>福島県</a>
 </div>
+<?php endif; ?>
+
+<?php if($ibarakiflg == 1):?>
 <div class="prefecture" jmap-uniq="8">
-<strong>茨城</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/ibaraki.php'>茨城県</a>
 </div>
+<?php endif; ?>
+
+<?php if($tochigiflg == 1):?>
 <div class="prefecture" jmap-uniq="9">
-<strong>栃木</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/tochigi.php'>栃木県</a>
 </div>
+<?php endif; ?>
+
+<?php if($gunmaflg == 1):?>
 <div class="prefecture" jmap-uniq="10">
-<strong>群馬</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/gunma.php'>群馬県</a>
 </div>
+<?php endif; ?>
+
+<?php if($saitamaflg == 1):?>
 <div class="prefecture" jmap-uniq="11">
-<strong>埼玉</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/saitama.php'>埼玉県</a>
 </div>
+<?php endif; ?>
+
+<?php if($chibaflg == 1):?>
 <div class="prefecture" jmap-uniq="12">
-<strong>千葉</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/chiba.php'>千葉県</a>
 </div>
+<?php endif; ?>
+
+<?php if($tokyoflg == 1):?>
 <div class="prefecture" jmap-uniq="13">
-<strong>東京</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/tokyo.php'>東京都</a>
 </div>
+<?php endif; ?>
+
+<?php if($kanagawaflg == 1):?>
 <div class="prefecture" jmap-uniq="14">
-<strong>神奈川</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kanagawa.php'>神奈川県</a>
 </div>
+<?php endif; ?>
+
+<?php if($niigataflg == 1):?>
 <div class="prefecture" jmap-uniq="15">
-<strong>新潟</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/niigata.php'>新潟県</a>
 </div>
+<?php endif; ?>
+
+<?php if($toyamaflg == 1):?>
 <div class="prefecture" jmap-uniq="16">
-<strong>富山</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/toyama.php'>富山県</a>
 </div>
+<?php endif; ?>
+
+<?php if($ishikawaflg == 1):?>
 <div class="prefecture" jmap-uniq="17">
-<strong>石川</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/ishikawa.php'>石川県</a>
 </div>
+<?php endif; ?>
+
+<?php if($fukuiflg == 1):?>
 <div class="prefecture" jmap-uniq="18">
-<strong>福井</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/fukui.php'>福井県</a>
 </div>
+<?php endif; ?>
+
+<?php if($yamanashiflg == 1):?>
 <div class="prefecture" jmap-uniq="19">
-<strong>山梨</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/yamanashi.php'>山梨県</a>
 </div>
+<?php endif; ?>
+
+<?php if($naganoflg == 1):?>
 <div class="prefecture" jmap-uniq="20">
-<strong>長野</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/nagano.php'>長野県</a>
 </div>
+<?php endif; ?>
+
+<?php if($gifuflg == 1):?>
 <div class="prefecture" jmap-uniq="21">
-<strong>岐阜</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/gifu.php'>岐阜県</a>
 </div>
+<?php endif; ?>
+
+<?php if($shizuokaflg == 1):?>
 <div class="prefecture" jmap-uniq="22">
-<strong>静岡</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/shizuoka.php'>静岡県</a>
 </div>
+<?php endif; ?>
+
+<?php if($aichiflg == 1):?>
 <div class="prefecture" jmap-uniq="23">
-<strong>愛知</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/aichi.php'>愛知県</a>
 </div>
+<?php endif; ?>
+
+<?php if($mieflg == 1):?>
 <div class="prefecture" jmap-uniq="24">
-<strong>三重</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/mie.php'>三重県</a>
 </div>
+<?php endif; ?>
+
+<?php if($shigaflg == 1):?>
 <div class="prefecture" jmap-uniq="25">
-<strong>滋賀</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/shiga.php'>滋賀県</a>
 </div>
+<?php endif; ?>
+
+<?php if($kyotoflg == 1):?>
 <div class="prefecture" jmap-uniq="26">
-<strong>京都</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kyoto.php'>京都府</a>
 </div>
+<?php endif; ?>
+
+<?php if($osakaflg == 1):?>
 <div class="prefecture" jmap-uniq="27">
-<strong>大阪</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/osaka.php'>大阪府</a>
 </div>
+<?php endif; ?>
+
+<?php if($hyogoflg == 1):?>
 <div class="prefecture" jmap-uniq="28">
-<strong>兵庫</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/hyogo.php'>兵庫県</a>
 </div>
+<?php endif; ?>
+
+<?php if($naraflg == 1):?>
 <div class="prefecture" jmap-uniq="29">
-<strong>奈良</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/nara.php'>奈良県</a>
 </div>
+<?php endif; ?>
+
+<?php if($wakayamaflg == 1):?>
 <div class="prefecture" jmap-uniq="30">
-<strong>和歌山</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/wakayama.php'>和歌山県</a>
 </div>
+<?php endif; ?>
+
+<?php if($tottoriflg == 1):?>
 <div class="prefecture" jmap-uniq="31">
-<strong>鳥取</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/tottori.php'>鳥取県</a>
 </div>
+<?php endif; ?>
+
+<?php if($shimaneflg == 1):?>
 <div class="prefecture" jmap-uniq="32">
-<strong>島根</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/shimane.php'>島根県</a>
 </div>
+<?php endif; ?>
+
+<?php if($okayamaflg == 1):?>
 <div class="prefecture" jmap-uniq="33">
-<strong>岡山</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/okayama.php'>岡山県</a>
 </div>
+<?php endif; ?>
+
+<?php if($hiroshimaflg == 1):?>
 <div class="prefecture" jmap-uniq="34">
-<strong>広島</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/hiroshima.php'>広島県</a>
 </div>
+<?php endif; ?>
+
+<?php if($yamaguchiflg == 1):?>
 <div class="prefecture" jmap-uniq="35">
-<strong>山口</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/yamaguchi.php'>山口県</a>
 </div>
+<?php endif; ?>
+
+<?php if($tokushimaflg == 1):?>
 <div class="prefecture" jmap-uniq="36">
-<strong>徳島</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/tokushima.php'>徳島県</a>
 </div>
+<?php endif; ?>
+
+<?php if($kagawaflg == 1):?>
 <div class="prefecture" jmap-uniq="37">
-<strong>香川</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kagawa.php'>香川県</a>
 </div>
+<?php endif; ?>
+
+<?php if($ehimeflg == 1):?>
 <div class="prefecture" jmap-uniq="38">
-<strong>愛媛</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/ehime.php'>愛媛県</a>
 </div>
+<?php endif; ?>
+
+<?php if($kochiflg == 1):?>
 <div class="prefecture" jmap-uniq="39">
-<strong>高知</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kochi.php'>高知県</a>
 </div>
+<?php endif; ?>
+
+<?php if($fukuokaflg == 1):?>
 <div class="prefecture" jmap-uniq="40">
-<strong>福岡</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/fukuoka.php'>福岡県</a>
 </div>
+<?php endif; ?>
+
+<?php if($sagaflg == 1):?>
 <div class="prefecture" jmap-uniq="41">
-<strong>佐賀</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/saga.php'>佐賀県</a>
 </div>
+<?php endif; ?>
+
+<?php if($nagasakiflg == 1):?>
 <div class="prefecture" jmap-uniq="42">
-<strong>長崎</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/nagasaki.php'>長崎県</a>
 </div>
+<?php endif; ?>
+
+<?php if($kumamotoflg == 1):?>
 <div class="prefecture" jmap-uniq="43">
-<strong>熊本</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kumamoto.php'>熊本県</a>
 </div>
+<?php endif; ?>
+
+<?php if($oitaflg == 1):?>
 <div class="prefecture" jmap-uniq="44">
-<strong>大分</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/oita.php'>大分県</a>
 </div>
+<?php endif; ?>
+
+<?php if($miyazakiflg == 1):?>
 <div class="prefecture" jmap-uniq="45">
-<strong>宮崎</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/miyazaki.php'>宮崎県</a>
 </div>
+<?php endif; ?>
+
+<?php if($kagoshimaflg == 1):?>
 <div class="prefecture" jmap-uniq="46">
-<strong>鹿児島</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/kagoshima.php'>鹿児島県</a>
 </div>
+<?php endif; ?>
+
+<?php if($okinawaflg == 1):?>
 <div class="prefecture" jmap-uniq="47">
-<strong>沖縄</strong>
+<a href = 'https://startpage001.herokuapp.com/traveler/47/okinawa.php'>沖縄県</a>
 </div>
+<?php endif; ?>
+
+
 </div>
 </div>
 </div>
@@ -284,53 +466,54 @@ $hokkaidoflg = $db->query("select flg from list where prefecture = '北海道'")
 都道府県
 <div><select name="pref" required>
   <option value="">訪れた都道府県を選択して下さい。</option>
-  <option value="北海道">北海道</option>
-  <option value="2">青森県</option>
-  <option value="3">岩手県</option>
-  <option value="4">宮城県</option>
-  <option value="5">秋田県</option>
-  <option value="6">山形県</option>
-  <option value="7">福島県</option>
-  <option value="8">茨城県</option>
-  <option value="9">栃木県</option>
-  <option value="10">群馬県</option>
-  <option value="11">埼玉県</option>
-  <option value="12">千葉県</option>
-  <option value="13">東京都</option>
-  <option value="14">神奈川県</option>
-  <option value="15">新潟県</option>
-  <option value="16">富山県</option>
-  <option value="17">石川県</option>
-  <option value="18">福井県</option>
-  <option value="19">山梨県</option>
-  <option value="20">長野県</option>
-  <option value="21">岐阜県</option>
-  <option value="22">静岡県</option>
-  <option value="23">愛知県</option>
-  <option value="24">三重県</option>
-  <option value="25">滋賀県</option>
-  <option value="26">京都府</option>
-  <option value="27">大阪府</option>
-  <option value="28">兵庫県</option>
-  <option value="29">奈良県</option>
-  <option value="30">和歌山県</option>
-  <option value="31">鳥取県</option>
-  <option value="32">島根県</option>
-  <option value="33">岡山県</option>
-  <option value="34">広島県</option>
-  <option value="35">山口県</option>
-  <option value="36">徳島県</option>
-  <option value="37">香川県</option>
-  <option value="38">愛媛県</option>
-  <option value="39">高知県</option>
-  <option value="40">福岡県</option>
-  <option value="41">佐賀県</option>
-  <option value="42">長崎県</option>
-  <option value="43">熊本県</option>
-  <option value="44">大分県</option>
-  <option value="45">宮崎県</option>
-  <option value="46">鹿児島県</option>
-  <option value="47">沖縄県</option>
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="岩手県">岩手県</option>
+<option value="宮城県">宮城県</option>
+<option value="秋田県">秋田県</option>
+<option value="山形県">山形県</option>
+<option value="福島県">福島県</option>
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="静岡県">静岡県</option>
+<option value="愛知県">愛知県</option>
+<option value="三重県">三重県</option>
+<option value="滋賀県">滋賀県</option>
+<option value="京都府">京都府</option>
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="山口県">山口県</option>
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+
 
 </select></div>
 spot
