@@ -169,6 +169,8 @@ $miyazakiflg = $db->query("select flg from list where prefecture = '宮崎県'")
 $kagoshimaflg = $db->query("select flg from list where prefecture = '鹿児島県'");
 $okinawaflg = $db->query("select flg from list where prefecture = '沖縄県'");
 
+print '$okinawaflg';
+print '$kochiflg';
 ?>
 
 
