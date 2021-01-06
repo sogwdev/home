@@ -14,7 +14,7 @@ $db->query("insert into pref (prefecture,spot,review) values ('$tdfk','$sight','
 $db->query("update list set flg = 1 where prefecture = '$tdfk'");
 
 
-header('Location: https://startpage001.herokuapp.com/traveler/success.php');
+header('Location: https://startpage001.herokuapp.com/traveler/map.php');
 ?>
 
 </body>
