@@ -20,5 +20,7 @@ $value = $db->query("select prefecture,spot,review from pref where prefecture = 
 				print "{$post['spot']}<hr>";
 ?>
 			}</td>
+		</tr>
+	</table>
 </body>
 </html>
